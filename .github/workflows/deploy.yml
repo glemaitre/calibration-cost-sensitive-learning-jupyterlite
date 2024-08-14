@@ -20,6 +20,7 @@ jobs:
         working-directory: ./calibration-cost-sensitive-learning
         run: |
           curl -fsSL https://pixi.sh/install.sh | bash
+          source ~/.bashrc
           pixi run -e doc convert-to-notebooks
           rm -f python_files/*.py
       - name: Setup Python
