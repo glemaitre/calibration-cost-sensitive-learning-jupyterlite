@@ -27,6 +27,7 @@ jobs:
           pixi run -e doc convert-to-notebooks
       - name: Copy notebooks to content
         run: |
+          mkdir content
           cp calibration-cost-sensitive-learning/python_files/*.ipynb content
           cp -r calibration-cost-sensitive-learning/python_files/predictions content
       - name: Setup Python
