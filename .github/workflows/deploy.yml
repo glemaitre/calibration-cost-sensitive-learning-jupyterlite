@@ -23,7 +23,9 @@ jobs:
           manifest-path: ./calibration-cost-sensitive-learning/pixi.toml
       - name: Convert Python file to notebooks
         working-directory: calibration-cost-sensitive-learning
-        run: pixi run -e doc convert-to-notebooks
+        run: |
+          pixi run -e doc convert-to-notebooks
+          rm -rf *.py
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
