@@ -7,8 +7,8 @@ notebook~=7.2.1
 jupyterlite-pyodide-kernel==0.4.1
 
 # Dependencies for tutorial
-numpy=="1.26.4"
-scipy=="1.12.0"
-scikit-learn=="1.4.2"
-pandas=="2.2.0"
-matplotlib=="3.5.2"
+numpy==1.26.4
+scipy==1.12.0
+scikit-learn==1.4.2
+pandas==2.2.0
+matplotlib==3.5.2
