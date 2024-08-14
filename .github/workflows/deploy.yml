@@ -20,8 +20,8 @@ jobs:
         uses: prefix-dev/setup-pixi@v0.8.1
         with:
           pixi-version: v0.27.1
+          manifest-path: ./calibration-cost-sensitive-learning/pixi.toml
       - name:
-        working-directory: ./calibration-cost-sensitive-learning
         run: pixi run -e doc convert-to-notebooks
       - name: Setup Python
         uses: actions/setup-python@v5
