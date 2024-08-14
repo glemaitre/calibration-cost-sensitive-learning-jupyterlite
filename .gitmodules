@@ -1,0 +1,3 @@
+[submodule "calibration-cost-sensitive-learning"]
+	path = calibration-cost-sensitive-learning
+	url = git@github.com:probabl-ai/calibration-cost-sensitive-learning.git
