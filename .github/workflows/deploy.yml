@@ -22,9 +22,7 @@ jobs:
       - name: Build notebooks
         working-directory: ./calibration-cost-sensitive-learning
         run: |
-          cat /home/runner/.bashrc
           pixi run -e doc convert-to-notebooks
-          rm -f python_files/*.py
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
