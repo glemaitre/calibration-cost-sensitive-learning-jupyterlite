@@ -25,11 +25,9 @@ jobs:
         working-directory: calibration-cost-sensitive-learning
         run: |
           pixi run -e doc convert-to-notebooks
-      - name: Copy notebooks to content
+      - name: Create a symlink to the content directory
         run: |
-          mkdir content
-          cp calibration-cost-sensitive-learning/python_files/*.ipynb content
-          cp -r calibration-cost-sensitive-learning/python_files/predictions content
+          ln -s calibration-cost-sensitive-learning/content content
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
