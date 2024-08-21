@@ -1,9 +1,9 @@
 # Core modules
 jupyterlite
-jupyterlite-server
 jupyterlab
-jupyterlab-server
 notebook
+jupyter-server
+jupyterlab-server
 
 # Python kernel
 jupyterlite-pyodide-kernel
