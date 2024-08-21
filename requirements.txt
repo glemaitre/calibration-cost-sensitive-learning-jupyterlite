@@ -7,3 +7,4 @@ jupyterlab-server
 
 # Python kernel
 jupyterlite-pyodide-kernel
+libarchive-c
