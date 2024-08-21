@@ -1,14 +1,9 @@
-# Core modules (mandatory)
-jupyterlite-core==0.4.0
-jupyterlab~=4.2.4
-notebook~=7.2.1
+# Core modules
+jupyterlite
+jupyterlite-server
+jupyterlab
+jupyterlab-server
+notebook
 
-# Python kernel (optional)
-jupyterlite-pyodide-kernel==0.4.1
-
-# Dependencies for tutorial
-numpy
-scipy
-scikit-learn
-pandas
-matplotlib
+# Python kernel
+jupyterlite-pyodide-kernel
