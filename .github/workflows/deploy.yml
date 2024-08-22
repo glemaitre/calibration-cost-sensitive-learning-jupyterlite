@@ -24,6 +24,9 @@ jobs:
       - name: Convert Python file to notebooks
         working-directory: calibration-cost-sensitive-learning
         run: |
+          # to create the predictions and validation curves cache
+          pixi run -e doc convert-to-executed-notebooks
+          # to clean the output
           pixi run -e doc convert-to-notebooks
       - name: Create a symlink to the content directory
         run: |
